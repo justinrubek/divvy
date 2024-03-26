@@ -6,7 +6,7 @@ pub(crate) struct Args {
     // TODO: support 'k', 'm', 'g', 't' suffixes
     /// Create files *byte_count* bytes in length.
     #[arg(short, long)]
-    byte_count: usize,
+    pub(crate) byte_count: usize,
     /// The file to split.
-    file: PathBuf,
+    pub(crate) file: PathBuf,
 }
